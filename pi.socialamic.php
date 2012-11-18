@@ -10,7 +10,7 @@ class Plugin_socialamic extends Plugin {
 
 	public function tweet()
 	{
-		$size = $this->fetch_param('size', 'large');
+		$size = $this->fetch_param('size', 'medium');
 		$count = $this->fetch_param('count', 'none');
 
 		$output = '
