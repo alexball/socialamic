@@ -38,8 +38,31 @@ The following parameters are currently available to the Social:amic tweet tag.
 		<th>Function</th>
 	</tr>
 	<tr>
-		<td><pre><code>size</code></pre></td>
+		<td><code>size</code></td>
 		<td>medium</td>
 		<td>Size of the Tweet button: <code>medium</code>, <code>large</code></td>
 	</tr>
+	<tr>
+		<td><code>count</code></td>
+		<td>none</td>
+		<td>Placement of the count of Tweets: <code>none</code>, <code>horizontal</code>, <code>vertical</code></td>
+	</tr>
 </table>
+
+#### Example ####
+
+To include a large Tweet button that counts the number of tweets from that post/page:
+
+	{{ socialamic:tweet size='large' count='vertical' }}
+	
+Issues, Suggestions, and More
+-----------------------------
+
+If you come across any issues with this plugin (doubtful, considering it's so simple), report them on GitHub. If you want to contact me, find me on Twitter [@AlexBall12](http://twitter.com/alexball12).
+
+Future plans to this plugin include:
+- Incorporate Twitter's follow button
+- Incorporate Facebook's Like button
+- Incorporate Google+'s Plus 1 button (anyone actually use this??)
+
+Other ideas to include? Let me know. Thanks!
