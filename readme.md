@@ -38,7 +38,9 @@ The following parameters are currently available to the Social:amic tweet tag.
 		<th>Function</th>
 	</tr>
 	<tr>
-		<td>`size`</td>
+		<td>
+				size
+		</td>
 		<td>medium</td>
 		<td>Dictates the size of the Tweet button. Options are:
 			`medium`
