@@ -55,7 +55,7 @@ To include a large Tweet button that counts the number of tweets from that post/
 
 	{{ socialamic:tweet size='large' count='horizontal' }}
 	
-*__Important__ A large button with a veritcal count is currently not supported by Twitter. If you want to have a large button with a count, it must be horizontal*
+*__Important:__ A large button with a veritcal count is currently not supported by Twitter. If you want to have a large button with a count, it must be horizontal*
 	
 Issues, Suggestions, and More
 -----------------------------
