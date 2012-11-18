@@ -53,7 +53,9 @@ The following parameters are currently available to the Social:amic tweet tag.
 
 To include a large Tweet button that counts the number of tweets from that post/page:
 
-	{{ socialamic:tweet size='large' count='vertical' }}
+	{{ socialamic:tweet size='large' count='horizontal' }}
+	
+*__Important__ A large button with a veritcal count is currently not supported by Twitter. If you want to have a large button with a count, it must be horizontal*
 	
 Issues, Suggestions, and More
 -----------------------------
