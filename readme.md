@@ -1,5 +1,6 @@
 Social:amic
 ===========
+Version 0.2
 
 A basic plugin for Statamic, which currently adds Twitter's official Tweet button to your post or page.
 
@@ -17,17 +18,27 @@ You can install this plugin via Git by navigating to your `_add_ons/` folder and
 Usage
 -----
 
-Social:amic is currently quite basic. I'm working on honing development skills, so I've got to start somewhere, right? I have plans on adding a lot to this plugin, including Facebook aspects, additional Twitter features, maybe some Google+ and anything else people want.
+Social:amic is currently quite basic. I'm working on honing development skills, so I've got to start somewhere, right?
 
-For now, the only feature is to add the official 'Tweet' button to your posts or pages.
+For now, the only features is to add the official 'Tweet' button and the Google+ button to your posts or pages.
 
-### Calling in your theme ###
+### Start with Scripts ###
+
+Social:amic is designed to minimize the load time on your Statamic site by asynchronously rendering the Twitter and Google+ buttons. Currently, this loads both the scripts for Twitter and Google+. I need to update this so that you can select which scripts to include, like `{{ socialamic:scripts include="twitter|google" }}`. If you're well versed in PHP and want to let me know how this code works, hit me up on Twitter at [@AlexBall12](http://twitter.com/alexball12).
+
+Include the following snippet in your layouts, right before the `</body>` tag.
+
+	{{ socialamic:scripts }}
+	
+This will load up the scripts needed for the Tweet and +1 buttons.
+
+### Tweet Button ###
 
 To include the 'Tweet' button, simply drop this code into your theme:
 
 	{{ socialamic:tweet }}
 	
-### Parameters ###
+#### Parameters ####
 
 The following parameters are currently available to the Social:amic tweet tag.
 
@@ -56,6 +67,40 @@ To include a large Tweet button that counts the number of tweets from that post/
 	{{ socialamic:tweet size='large' count='horizontal' }}
 	
 *__Important:__ A large button with a veritcal count is currently not supported by Twitter. If you want to have a large button with a count, it must be horizontal*
+
+### +1 Button ###
+
+To include the Google+'s +1 button, simply drop this code into your theme:
+
+	{{ socialamic:plusone }}
+	
+#### Parameters ####
+
+The following parameters are currently available to the Social:amic plusone tag.
+
+<table>
+	<tr>
+		<th>Parameter</th>
+		<th>Default</th>
+		<th>Function</th>
+	</tr>
+	<tr>
+		<td><code>size</code></td>
+		<td>medium</td>
+		<td>Size of the +1 button: <code>small</code>, <code>medium</code>, <code>standard</code>, <code>tall</code></td>
+	</tr>
+	<tr>
+		<td><code>count</code></td>
+		<td>none</td>
+		<td>Placement of the count of Tweets: <code>none</code>, <code>bubble</code>, <code>inline</code></td>
+	</tr>
+</table>
+
+#### Example ####
+
+To include a large Tweet button that hides the number of +1's from that post/page:
+
+	{{ socialamic:plusone size='small' count='none' }}
 	
 Issues, Suggestions, and More
 -----------------------------
