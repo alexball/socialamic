@@ -110,6 +110,5 @@ If you come across any issues with this plugin (doubtful, considering it's so si
 Future plans to this plugin include:
 - Incorporate Twitter's follow button
 - Incorporate Facebook's Like button
-- Incorporate Google+'s Plus 1 button (anyone actually use this??)
 
 Other ideas to include? Let me know. Thanks!
