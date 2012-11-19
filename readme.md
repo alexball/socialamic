@@ -2,7 +2,7 @@ Social:amic
 ===========
 Version 0.2
 
-A basic plugin for Statamic, which currently adds Twitter's official Tweet button to your post or page.
+A basic plugin for Statamic, which quickly added social sharing buttons (Tweet and +1) for your Statamic pages or posts.
 
 Installation
 ------------
